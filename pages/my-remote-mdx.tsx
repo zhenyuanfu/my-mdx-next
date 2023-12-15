@@ -27,8 +27,8 @@ import { remarkTableOfContents } from '../plugins/remark/remarkTableOfContents';
 
 import Blockquote from "../components/Blockquote";
 
-const Para = ({ children }: { children: any }) => (
-  <div className="custom para">{ children }</div>
+const Para = (props: any) => (
+  <div className="custom para">{ props.children }</div>
 )
 
 const components = { Blockquote, p: Para };
