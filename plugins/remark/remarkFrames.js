@@ -5,9 +5,6 @@ export const remarkFrames = () => {
         console.log('tree=', tree);
         tree.children = tree.children.map((node) => {
             // Start of horizontal block: -- block
-            if (node.type === 'paragraph' ) {
-                console.log('node==', node);
-            }
             if (node.type === 'paragraph' &&
                 node.children.length === 1 &&
                 node.children[0].value === '-- block') {

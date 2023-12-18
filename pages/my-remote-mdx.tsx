@@ -38,7 +38,7 @@ interface Props {
 }
 
 export default function RemoteMdxPage({ mdxSource, ...props }: Props) {
-  console.log("props==", props, mdxSource);
+  // console.log("props==", props, mdxSource);
   return (
     <>
       <Head>
