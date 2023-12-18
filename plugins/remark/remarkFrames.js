@@ -2,7 +2,7 @@ import { toMdxJsxFlowElement } from '../../lib/remark-utils.js';
 export const remarkFrames = () => {
     return (tree) => {
         let preTree = { children: [] };
-        console.log('tree=', tree);
+        // console.log('tree=', tree);
         tree.children = tree.children.map((node) => {
             // Start of horizontal block: -- block
             if (node.type === 'paragraph' &&
