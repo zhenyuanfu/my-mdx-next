@@ -7,11 +7,7 @@ import Head from "next/head";
 import remarkGfm from 'remark-gfm';
 import Blockquote from "../components/Blockquote";
 
-const Para = (props: any) => (
-  <div className="custom para">{ props.children }</div>
-)
-
-const components = { Blockquote, p: Para };
+const components = { Blockquote };
 
 interface Props {
   mdxSource: MDXRemoteSerializeResult;
